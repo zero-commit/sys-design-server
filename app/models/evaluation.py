@@ -9,3 +9,4 @@ class Evaluation(db.Model):
     scores = db.Column(db.JSON, nullable=False)
     final_score = db.Column(db.Float)
     reasoning = db.Column(db.Text)
+    created_at = db.Column(db.DateTime, server_default=db.func.now())

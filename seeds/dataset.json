@@ -1,0 +1,129 @@
+{
+  "records": [
+    {
+      "problem": "Design a Redis-like cache with TTL",
+      "prompts": [
+        "Design Redis cache",
+        "Add TTL expiration",
+        "Focus on clean class design"
+      ],
+      "solution_code": "class Cache:\n  def __init__(self): self.store = {}",
+      "language": "python"
+    },
+    {
+      "problem": "Design a Redis-like cache with TTL",
+      "prompts": [
+        "Quick Redis cache"
+      ],
+      "solution_code": "cache = {}",
+      "language": "python"
+    },
+    {
+      "problem": "Design rate limiter",
+      "prompts": [
+        "Design sliding window rate limiter",
+        "Per-user limits"
+      ],
+      "solution_code": "class RateLimiter:\n  def allow(self, user_id): pass",
+      "language": "python"
+    },
+    {
+      "problem": "Design rate limiter",
+      "prompts": [
+        "Simple rate limit"
+      ],
+      "solution_code": "if count > 10: deny()",
+      "language": "python"
+    },
+    {
+      "problem": "Design message queue",
+      "prompts": [
+        "Design message queue",
+        "Support publish and consume"
+      ],
+      "solution_code": "class Queue:\n  def enqueue(self, msg): pass",
+      "language": "python"
+    },
+    {
+      "problem": "Design message queue",
+      "prompts": [
+        "Quick MQ"
+      ],
+      "solution_code": "messages = []",
+      "language": "python"
+    },
+    {
+      "problem": "Design authentication service",
+      "prompts": [
+        "JWT based auth system"
+      ],
+      "solution_code": "def login(): return jwt",
+      "language": "python"
+    },
+    {
+      "problem": "Design authentication service",
+      "prompts": [
+        "Simple login"
+      ],
+      "solution_code": "print('login')",
+      "language": "python"
+    },
+    {
+      "problem": "Design distributed lock",
+      "prompts": [
+        "Design distributed lock using Redis"
+      ],
+      "solution_code": "def acquire_lock(): pass",
+      "language": "python"
+    },
+    {
+      "problem": "Design distributed lock",
+      "prompts": [
+        "Lock"
+      ],
+      "solution_code": "lock = True",
+      "language": "python"
+    },
+    {
+      "problem": "Design scheduler",
+      "prompts": [
+        "Design job scheduler",
+        "Support delayed jobs"
+      ],
+      "solution_code": "class Scheduler:\n  def schedule(self): pass",
+      "language": "python"
+    },
+    {
+      "problem": "Design scheduler",
+      "prompts": [
+        "Cron job"
+      ],
+      "solution_code": "sleep(10)",
+      "language": "python"
+    },
+    {
+      "problem": "Design logging system",
+      "prompts": [
+        "Async logging system"
+      ],
+      "solution_code": "class Logger:\n  def log(self, msg): pass",
+      "language": "python"
+    },
+    {
+      "problem": "Design logging system",
+      "prompts": [
+        "Basic log"
+      ],
+      "solution_code": "logs.append(msg)",
+      "language": "python"
+    },
+    {
+      "problem": "Design cache invalidation system",
+      "prompts": [
+        "Cache invalidation logic"
+      ],
+      "solution_code": "invalidate(key)",
+      "language": "python"
+    }
+  ]
+}

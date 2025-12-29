@@ -1,9 +1,14 @@
 from flask import Blueprint, jsonify
 from app.services.evaluation_service import evaluate_submission
 
-bp = Blueprint("evaluations", __name__)
+evaluations_bp = Blueprint("evaluations", __name__)
 
-@bp.route("/api/v1/evaluations/<submission_id>", methods=["POST"])
+@evaluations_bp.route("/v1/evaluations/<submission_id>", methods=["POST"])
 def evaluate(submission_id):
-    result = evaluate_submission(submission_id)
-    return jsonify(result)
+    evaluation = evaluate_submission(submission_id)
+    return jsonify({
+        "evaluation_id": evaluation.id,
+        "final_score": evaluation.final_score,
+        "scores": evaluation.scores,
+        "reasoning": evaluation.reasoning
+    })

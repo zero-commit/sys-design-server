@@ -8,3 +8,4 @@ class Problem(db.Model):
     title = db.Column(db.Text, nullable=False)
     description = db.Column(db.Text, nullable=False)
     difficulty = db.Column(db.String)
+    created_at = db.Column(db.DateTime, server_default=db.func.now())

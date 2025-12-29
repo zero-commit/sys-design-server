@@ -9,3 +9,4 @@ class Submission(db.Model):
     prompts = db.Column(db.JSON, nullable=False)
     solution_code = db.Column(db.Text, nullable=False)
     language = db.Column(db.String)
+    created_at = db.Column(db.DateTime, server_default=db.func.now())
